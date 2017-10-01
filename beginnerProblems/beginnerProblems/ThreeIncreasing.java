@@ -18,7 +18,7 @@ public class ThreeIncreasing {
 		
 	}
 	public static boolean checkFor3 (char [] array) {
-		for ( int i = 0 ; i < array.length - 2 ; i++) {
+		for ( int i = 0 ; i < array.length - 1; i++) {
 			if (array[i] < array[i+1] && array [i+1] < array[i+2]) {
 				//System.out.println("Contains three consecutive increasing numbers!");
 				return true;
