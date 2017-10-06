@@ -8,18 +8,18 @@ public class DoubleX {
 		System.out.println("Enter a string: ");
 		String str = scanner.nextLine();
 		scanner.close();
-		
-		System.out.println(doubleX ( str));
+
+		System.out.println(doubleX(str));
 	}
 
 	public static boolean doubleX(String str) {
 		int i = 0;
-		
-		while ( i < str.length()) {
-			if (str.charAt(i) == 'x' && str.charAt(i+1) == 'x') {
+
+		while (i < str.length()) {
+			if (str.charAt(i) == 'x' && str.charAt(i + 1) == 'x') {
 				return true;
 			}
-			if (str.charAt(i) == 'x' && str.charAt(i+1) != 'x') {
+			if (str.charAt(i) == 'x' && str.charAt(i + 1) != 'x') {
 				return false;
 			}
 			i++;
